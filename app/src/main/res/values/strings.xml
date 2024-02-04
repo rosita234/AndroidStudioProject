@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">pert4</string>
+    <string name="submit">submit</string>
+    <string name="popup_message">Informasi berhasil disimpan</string>
+    <string name="submit_imgBtn">Submit</string>
+    <string name="reset_imgBtn">Reset</string>
+</resources>
