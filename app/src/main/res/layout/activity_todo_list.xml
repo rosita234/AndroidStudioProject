@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".TodoListActivity">
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:layout_gravity="top"-->
+    <!--        android:background="@color/darkgrey">-->
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="20dp"-->
+    <!--            android:layout_marginRight="20dp"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="@dimen/value"-->
+    <!--            android:text="@string/UI">-->
+    <!--        </TextView>-->
+    <!--    </LinearLayout>-->
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            tools:ignore="InefficientWeight">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/title"
+                    android:elegantTextHeight="true"
+                    android:text="@string/name3">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/title"
+                    android:elegantTextHeight="true"
+                    android:text="@string/gender">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/title"
+                    android:elegantTextHeight="true"
+                    android:text="@string/hobi3">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:ignore="InefficientWeight">
+
+                <EditText
+                    android:id="@+id/inputName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autofillHints="Please insert your name"
+                    android:inputType="text"
+                    android:labelFor="@+id/inputName"
+                    tools:ignore="SpeakableTextPresentCheck">
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="InefficientWeight">
+                <RadioGroup
+                    android:id="@+id/ruanganRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radioLuar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="@string/outdoor"
+                        tools:ignore="TouchTargetSizeCheck">
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radioDalam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="@string/indoor"
+                        tools:ignore="TouchTargetSizeCheck">
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="InefficientWeight">
+                <CheckBox
+                    android:id="@+id/hobi3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hobi3_1">
+                </CheckBox>
+                <CheckBox
+                    android:id="@+id/hobi3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hobi3_2">
+                </CheckBox>
+                <CheckBox
+                    android:id="@+id/hobi3_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hobi3_3">
+                </CheckBox>
+                <CheckBox
+                    android:id="@+id/hobi3_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hobi3_4">
+                </CheckBox>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/simpan">
+        </Button>
+
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/plusButton"-->
+        <!--            android:layout_width="50dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:contentDescription="@string/content_description_plus_button"-->
+        <!--            android:src="@android:drawable/ic_input_add"-->
+        <!--            android:text="@string/row1"-->
+        <!--            android:textSize="24sp"-->
+        <!--            tools:ignore="ContentDescription,ImageContrastCheck" />-->
+
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/xButton"-->
+        <!--            android:layout_width="50dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:contentDescription="@string/content_description_x_button"-->
+        <!--            android:src="@android:drawable/ic_delete"-->
+        <!--            android:textSize="24sp"-->
+        <!--            tools:ignore="ContentDescription" />-->
+    </LinearLayout>
+</LinearLayout>

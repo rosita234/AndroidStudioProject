@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <include layout = "@layout/tab_kuis">
+
+    </include>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/judul"
+        android:textAlignment="center"
+        android:textSize="@dimen/judul"
+        android:textStyle="bold"
+        android:layout_marginTop="110dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nama"
+            android:textSize="@dimen/fntKcl"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tanda1"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tandaPetik"
+            android:textAlignment="center"
+            android:textSize="@dimen/fntKcl"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/isiNama"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="isiNama"
+            android:textSize="@dimen/fntBsr"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/NIM"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/NIM"
+            android:textSize="@dimen/fntKcl"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tanda2"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tandaPetik"
+            android:textAlignment="center"
+            android:textSize="@dimen/fntKcl"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/isiNIM"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="isiNIM"
+            android:textSize="@dimen/fntBsr"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/jurusan"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/jurusan"
+            android:textSize="@dimen/fntKcl"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tanda3"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tandaPetik"
+            android:textAlignment="center"
+            android:textSize="@dimen/fntKcl"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/isiJurusan"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="isiJurusan"
+            android:textSize="@dimen/fntBsr"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/hobi"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hobi"
+            android:textSize="@dimen/fntKcl"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tanda4"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tandaPetik"
+            android:textAlignment="center"
+            android:textSize="@dimen/fntKcl"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/isiHobi"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="isiHobi"
+            android:textSize="@dimen/fntBsr"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOke"
+        android:layout_width="160dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/btnOke"
+        android:textSize="@dimen/fntKcl"
+        android:textStyle="bold"
+        android:backgroundTint="@color/lightgreen"
+        android:layout_marginTop="100dp"/>
+</LinearLayout>

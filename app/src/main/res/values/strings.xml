@@ -1,7 +1,30 @@
 <resources>
+    <string name="gender">Gender:</string>
+    <string name="hobi3">Hobi:</string>
+    <string name="name3">Name:</string>
+    <string name="gender1">PRIA</string>
+    <string name="gender2">WANITA</string>
+    <string name="hobi3_1">OlahRaga</string>
+    <string name="hobi3_2">Jalan - jalan</string>
+    <string name="hobi3_3">Makan</string>
+    <string name="hobi3_4">Belajar</string>
+    <string name="UI">UI Component</string>
+    <string name="content_description_plus_button">Submit</string>
+    <string name="content_description_x_button">Reset</string>
+    <string name="string_submit">Berhasil disimpan</string>
+    <string name="string_reset">Data telah direset</string>
+    <string name="Produktiv">ProDuktiv</string>
+    <string name="Profil">Profil</string>
+    <string name="profilText">Perbaharui Foto, nama dan informasi lainnya</string>
+
     <string name="app_name">pert4</string>
     <string name="submit">submit</string>
     <string name="popup_message">Informasi berhasil disimpan</string>
     <string name="submit_imgBtn">Submit</string>
     <string name="reset_imgBtn">Reset</string>
+    <string name="todo">Todo List</string>
+    <string name="todoTxt">Tulis jadwal rencana kegiatan anda</string>
+    <string name="simpan">Simpan</string>
+    <string name="indoor">Dalam ruangan</string>
+    <string name="outdoor">Luar ruangan</string>
 </resources>

@@ -2,6 +2,7 @@ package com.example.pert4;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,11 +15,17 @@ public class ButtonActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_button);
 
+
+
         supabutton = (Button) findViewById(R.id.supabutton);
         supabutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d("BUTTONS", "Button Supabutton di klik");
+
+                Intent intent=
+                        new Intent(ButtonActivity.this, RadioActivity.class);
+                startActivity(intent);
             }
         });
     }
