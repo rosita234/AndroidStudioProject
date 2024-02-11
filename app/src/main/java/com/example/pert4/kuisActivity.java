@@ -10,28 +10,28 @@ import android.widget.LinearLayout;
 
 public class kuisActivity extends AppCompatActivity {
 
-    LinearLayout keProfil;
-    LinearLayout keToDo;
+    LinearLayout gotoProfil;
+    LinearLayout gotoToDo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kuis1);
 
-        keProfil = (LinearLayout) findViewById(R.id.keProfil);
-        keToDo = (LinearLayout) findViewById(R.id.keToDo);
+        gotoProfil = (LinearLayout) findViewById(R.id.gotoProfil);
+        gotoToDo = (LinearLayout) findViewById(R.id.gotoToDo);
 
-        keProfil.setOnClickListener(new View.OnClickListener() {
+        gotoProfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(kuisActivity.this, profilActivity.class);
+                Intent intent = new Intent(kuisActivity.this, ProfilActivity.class);
                 startActivity(intent);
             }
         });
 
-        keToDo.setOnClickListener(new View.OnClickListener() {
+        gotoToDo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(kuisActivity.this, TodoListActivity.class);
+                Intent intent = new Intent(kuisActivity.this, toDoList.class);
                 startActivity(intent);
             }
         });

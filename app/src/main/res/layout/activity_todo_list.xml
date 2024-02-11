@@ -5,34 +5,21 @@
     android:layout_height="match_parent"
     android:gravity="top"
     android:orientation="vertical"
-    tools:context=".TodoListActivity">
+    tools:context=".toDoList">
+    <include layout="@layout/activity_bar_atas">
 
-    <!--    <LinearLayout-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="40dp"-->
-    <!--        android:gravity="center"-->
-    <!--        android:layout_gravity="top"-->
-    <!--        android:background="@color/darkgrey">-->
-    <!--        <TextView-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_marginLeft="20dp"-->
-    <!--            android:layout_marginRight="20dp"-->
-    <!--            android:textColor="@color/white"-->
-    <!--            android:textSize="@dimen/value"-->
-    <!--            android:text="@string/UI">-->
-    <!--        </TextView>-->
-    <!--    </LinearLayout>-->
+    </include>
+
     <LinearLayout
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:baselineAligned="false"
+        android:layout_margin="50sp"
         android:orientation="horizontal"
         tools:ignore="UselessParent">
         <LinearLayout
-            android:layout_width="100dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0"
             android:orientation="vertical"
@@ -42,36 +29,129 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <TextView
+                    android:layout_width="140sp"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/paragraph1"
+                    android:elegantTextHeight="true"
+                    android:textStyle="bold"
+                    android:text="@string/activity">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/header2"
+                    android:elegantTextHeight="true"
+                    android:text="@string/colon">
+                </TextView>
+                <EditText
+                    android:id="@+id/inputActName"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:textSize="@dimen/title"
-                    android:elegantTextHeight="true"
-                    android:text="@string/name3">
-                </TextView>
+                    android:autofillHints="Please insert your name"
+                    android:inputType="text"
+                    android:labelFor="@+id/inputName"
+                    tools:ignore="SpeakableTextPresentCheck">
+                </EditText>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
                 android:orientation="horizontal">
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="140sp"
                     android:layout_height="match_parent"
-                    android:textSize="@dimen/title"
+                    android:textSize="@dimen/paragraph1"
                     android:elegantTextHeight="true"
-                    android:text="@string/gender">
+                    android:textStyle="bold"
+                    android:text="@string/actPlace">
                 </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/header2"
+                    android:text="@string/colon">
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    tools:ignore="InefficientWeight">
+                    <RadioGroup
+                        android:id="@+id/inputRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/radioOutdoor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="@string/outdoor"
+                            tools:ignore="TouchTargetSizeCheck">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/radioIndoor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="@string/indoor"
+                            tools:ignore="TouchTargetSizeCheck">
+                        </RadioButton>
+                    </RadioGroup>
+                </LinearLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="20sp">
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="140sp"
                     android:layout_height="match_parent"
-                    android:textSize="@dimen/title"
+                    android:textSize="@dimen/paragraph1"
                     android:elegantTextHeight="true"
-                    android:text="@string/hobi3">
+                    android:textStyle="bold"
+                    android:text="@string/actType">
                 </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/header2"
+                    android:text="@string/colon">
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    tools:ignore="InefficientWeight">
+                    <CheckBox
+                        android:id="@+id/sport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hobi3_1">
+                    </CheckBox>
+                    <CheckBox
+                        android:id="@+id/walk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hobi3_2">
+                    </CheckBox>
+                    <CheckBox
+                        android:id="@+id/eat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hobi3_3">
+                    </CheckBox>
+                    <CheckBox
+                        android:id="@+id/study"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hobi3_4">
+                    </CheckBox>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
@@ -87,114 +167,27 @@
                 android:orientation="horizontal"
                 tools:ignore="InefficientWeight">
 
-                <EditText
-                    android:id="@+id/inputName"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:autofillHints="Please insert your name"
-                    android:inputType="text"
-                    android:labelFor="@+id/inputName"
-                    tools:ignore="SpeakableTextPresentCheck">
-                </EditText>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                tools:ignore="InefficientWeight">
-                <RadioGroup
-                    android:id="@+id/ruanganRadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
-                    <RadioButton
-                        android:id="@+id/radioLuar"
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:text="@string/outdoor"
-                        tools:ignore="TouchTargetSizeCheck">
-                    </RadioButton>
+            </LinearLayout>
 
-                    <RadioButton
-                        android:id="@+id/radioDalam"
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:text="@string/indoor"
-                        tools:ignore="TouchTargetSizeCheck">
-                    </RadioButton>
-                </RadioGroup>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                tools:ignore="InefficientWeight">
-                <CheckBox
-                    android:id="@+id/hobi3_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/hobi3_1">
-                </CheckBox>
-                <CheckBox
-                    android:id="@+id/hobi3_2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/hobi3_2">
-                </CheckBox>
-                <CheckBox
-                    android:id="@+id/hobi3_3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/hobi3_3">
-                </CheckBox>
-                <CheckBox
-                    android:id="@+id/hobi3_4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/hobi3_4">
-                </CheckBox>
-            </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="end"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center">
 
         <Button
             android:id="@+id/submit_btn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/simpan">
+            android:backgroundTint="@color/green1"
+            android:textSize="@dimen/paragraph1"
+            android:text="@string/submit">
         </Button>
-
-        <!--        <ImageButton-->
-        <!--            android:id="@+id/plusButton"-->
-        <!--            android:layout_width="50dp"-->
-        <!--            android:layout_height="50dp"-->
-        <!--            android:layout_marginLeft="10dp"-->
-        <!--            android:layout_marginRight="10dp"-->
-        <!--            android:contentDescription="@string/content_description_plus_button"-->
-        <!--            android:src="@android:drawable/ic_input_add"-->
-        <!--            android:text="@string/row1"-->
-        <!--            android:textSize="24sp"-->
-        <!--            tools:ignore="ContentDescription,ImageContrastCheck" />-->
-
-        <!--        <ImageButton-->
-        <!--            android:id="@+id/xButton"-->
-        <!--            android:layout_width="50dp"-->
-        <!--            android:layout_height="50dp"-->
-        <!--            android:layout_marginLeft="10dp"-->
-        <!--            android:layout_marginRight="10dp"-->
-        <!--            android:contentDescription="@string/content_description_x_button"-->
-        <!--            android:src="@android:drawable/ic_delete"-->
-        <!--            android:textSize="24sp"-->
-        <!--            tools:ignore="ContentDescription" />-->
     </LinearLayout>
 </LinearLayout>

@@ -1,7 +1,7 @@
 <resources>
-    <string name="gender">Gender:</string>
-    <string name="hobi3">Hobi:</string>
-    <string name="name3">Name:</string>
+    <string name="gender">Gender</string>
+    <string name="hobi3">Hobi</string>
+    <string name="name">Name</string>
     <string name="gender1">PRIA</string>
     <string name="gender2">WANITA</string>
     <string name="hobi3_1">OlahRaga</string>
@@ -16,8 +16,9 @@
     <string name="Produktiv">ProDuktiv</string>
     <string name="Profil">Profil</string>
     <string name="profilText">Perbaharui Foto, nama dan informasi lainnya</string>
-
+    <string name="dataMaba">Data Mahasiswa</string>
     <string name="app_name">pert4</string>
+    <string name="colon">:</string>
     <string name="submit">submit</string>
     <string name="popup_message">Informasi berhasil disimpan</string>
     <string name="submit_imgBtn">Submit</string>
@@ -27,4 +28,11 @@
     <string name="simpan">Simpan</string>
     <string name="indoor">Dalam ruangan</string>
     <string name="outdoor">Luar ruangan</string>
+    <string name="stud_ID">NIM</string>
+    <string name="major">Jurusan</string>
+    <string name="hobby">Hobi</string>
+    <string name="activity">Nama kegiatan</string>
+    <string name="actType">Jenis kegiatan</string>
+    <string name="actPlace">Tempat kegiatan</string>
+
 </resources>
