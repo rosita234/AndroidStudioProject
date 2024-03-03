@@ -6,19 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".ButtonActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="414dp"
+        android:layout_height="606dp"
+        android:orientation="vertical"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:orientation="vertical" >
-
-        <Button
-            android:id="@+id/supabutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="I'm a button" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar">
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -28,12 +41,19 @@
             app:tint="#673AB7" />
 
         <Button
+            android:id="@+id/supabutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I'm a button" />
+
+        <Button
+            android:id="@+id/btnOut"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/user_24"
             android:drawablePadding="4dp"
             android:drawableTint="#ff0000"
-            android:text="I'm a button with an icon" />
+            android:text="Keluar" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

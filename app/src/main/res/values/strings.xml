@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="gender">Gender</string>
     <string name="hobi3">Hobi</string>
@@ -34,5 +35,8 @@
     <string name="activity">Nama kegiatan</string>
     <string name="actType">Jenis kegiatan</string>
     <string name="actPlace">Tempat kegiatan</string>
+
+    <string name="action_favorite">Favorite</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
